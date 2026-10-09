@@ -1,39 +1,15 @@
-# Python 字节码与本地虚拟环境
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-env/
-.direnv/
-
-# Python 检查、测试与覆盖率产物
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.pytype/
-.tox/
-.nox/
-.coverage
-.coverage.*
-htmlcov/
-/coverage.xml
-/junit.xml
-
-# Python 打包产物；依赖锁文件应提交
-/build/
-/dist/
-*.egg-info/
-.eggs/
-
-# Java 样例及目标项目的构建缓存和产物
+# Java 应用、样例及目标项目的构建缓存和产物
 target/
+build/
+out/
+/dist/
 .gradle/
 .m2/
 .rewrite-cache/
 *.class
-/tests/fixtures/**/build/
-/examples/**/build/
+*.hprof
 # 保留 Maven / Gradle wrapper，包括 wrapper JAR
+# 保留构建脚本、依赖锁文件与依赖校验配置
 
 # 本地凭据；保留不含秘密的配置模板
 .env
@@ -44,10 +20,8 @@ target/
 !.env.*.template
 /.secrets/
 
-# 建议将运行时 checkpoint、目标项目副本、Diff 和报告统一放在此处
+# MigraFlow 本地运行数据，如分析记录、日志、Diff 和报告；目标项目位于用户指定目录
 /.migraflow/
-# LangGraph 本地开发服务生成的数据（使用该服务时）
-.langgraph_api/
 /logs/
 /*.log
 /tmp/
@@ -70,4 +44,4 @@ target/
 Thumbs.db
 Desktop.ini
 
-# 应提交：AGENTS.md、docs/、.agents/skills/、pyproject.toml、锁文件、Recipe 配置和样例源码
+# 应提交：AGENTS.md、docs/、.agents/skills/、Maven / Gradle 配置、Recipe 配置和样例源码
