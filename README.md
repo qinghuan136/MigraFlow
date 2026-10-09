@@ -75,4 +75,4 @@ migraflow> /exit
 
 LangGraph4j、OpenRewrite 和模型接入依赖在实现相关能力时再添加。
 
-项目范围和架构参见 [项目描述](docs/about-the-project.md)，开发约定参见 [AGENTS.md](AGENTS.md)。
+项目范围和架构参见 [项目描述](docs/about-the-project.md)，Workspace 的 ProjectModel、LST 及构建工具适配边界参见 [项目结构解析设计](docs/workspace/project-structure.md)，开发约定参见 [AGENTS.md](AGENTS.md)。
